@@ -21,4 +21,9 @@ public class Game {
     public int getPartyCount() {
         return this.party.size();
     }
+
+    public void addToParty(Player player) {
+        this.party.add(player);
+    }
+
 }
