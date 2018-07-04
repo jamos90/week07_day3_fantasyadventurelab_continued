@@ -1,5 +1,6 @@
 package Players;
 
+import RoomContents.Enemy;
 import Skills.Spell;
 
 public class Player {
@@ -19,5 +20,12 @@ public class Player {
     public int getHP() {
         return this.hp;
     }
+
+    public void takesDamaage(Enemy enemy){
+        this.hp -= enemy.hasDamage();
+
+    }
+
+
 
 }

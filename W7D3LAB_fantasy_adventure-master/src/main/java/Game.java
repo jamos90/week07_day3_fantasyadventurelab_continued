@@ -29,4 +29,9 @@ public class Game {
     public void addToDungeon(Room room) {
         this.dungeons.add(room);
     }
+
+    public Room getRoom(){
+        return dungeons.get(0);
+
+    }
 }
