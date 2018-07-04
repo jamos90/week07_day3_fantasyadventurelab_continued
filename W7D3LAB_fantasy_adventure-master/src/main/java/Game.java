@@ -26,4 +26,7 @@ public class Game {
         this.party.add(player);
     }
 
+    public void addToDungeon(Room room) {
+        this.dungeons.add(room);
+    }
 }
