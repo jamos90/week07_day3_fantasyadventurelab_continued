@@ -21,4 +21,9 @@ public class Cleric extends Player implements IHeal {
     public void changePotion(Restoration restoration){
         this.restoration = restoration;
     }
+
+    public void heal( Player player){
+        restoration.heal(player);
+
+    }
 }

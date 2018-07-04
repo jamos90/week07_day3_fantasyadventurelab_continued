@@ -18,8 +18,8 @@ public class BarbarianTest {
 
         @Before
         public void setUp(){
-            weapon1 = new Weapon("Stinger", "Sword", 4);
-            weapon2 = new Weapon("Smasher", "Hammer", 6);
+            weapon1 = new Weapon("Stinger", "Sword", 40);
+            weapon2 = new Weapon("Smasher", "Hammer", 60);
             enemy = new Enemy("Maleficant","Witch",100,40,9);
             barbarian = new Barbarian("Conan", 90, weapon1);
         }
@@ -53,9 +53,16 @@ public class BarbarianTest {
 
         @Test
         public void canTakeDamage(){
-            barbarian.takesDamaage(enemy);
+            barbarian.takesDamage(enemy);
             assertEquals(50,barbarian.getHP());
         }
+
+        @Test
+         public void canGiveDamage(){
+            enemy.takesDamage(weapon1);
+            assertEquals(60, enemy.getHp());
+        }
+
 
 
     }

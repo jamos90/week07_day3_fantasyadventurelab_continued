@@ -1,5 +1,7 @@
 package RoomContents;
 
+import Skills.Weapon;
+
 public class Enemy {
     protected String name;
     protected String type;
@@ -22,4 +24,13 @@ public class Enemy {
     public int hasDamage() {
         return this.damage;
     }
+
+    public int getHp() {
+        return this.hp;
+    }
+
+    public void takesDamage(Weapon weapon){
+        this.hp -= weapon.getDamage();
+    }
+
 }
