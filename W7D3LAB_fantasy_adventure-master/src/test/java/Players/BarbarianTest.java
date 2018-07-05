@@ -21,7 +21,7 @@ public class BarbarianTest {
             weapon1 = new Weapon("Stinger", "Sword", 40);
             weapon2 = new Weapon("Smasher", "Hammer", 60);
             enemy = new Enemy("Maleficant","Witch",100,40,9);
-            barbarian = new Barbarian("Conan", 90, weapon1);
+            barbarian = new Barbarian("Conan", 90, weapon1,0);
         }
 
         @Test

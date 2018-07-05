@@ -23,9 +23,9 @@ public class ClericTest {
     public void setUp(){
         restoration1 = new Restoration("Restoration","Healing",-50);
         restoration2 = new Restoration("Minor Restoration","Healing",-30);
-        cleric = new Cleric("Dr. James", 100, restoration1);
+        cleric = new Cleric("Dr. James", 100, 0, restoration1);
         weapon = new Weapon("Stabber", "Sword",34);
-        knight = new Knight("Sir David",50, weapon);
+        knight = new Knight("Sir David",50, weapon,0);
     }
 
     @Test

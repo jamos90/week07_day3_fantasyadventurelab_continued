@@ -28,7 +28,7 @@ public class GameTest {
         treasure = new Treasure("Dabloons","coins",4,3);
         room1 = new Room("Sad Room","Hard Dungeon",4, enemy1, treasure);
         room2 = new Room("Pain Room","Hard Dungeon",6, enemy2, treasure);
-        player1 = new Knight("Allan",100,weapon);
+        player1 = new Knight("Allan",10, weapon,0);
         game = new Game();
     }
 
@@ -59,5 +59,17 @@ public class GameTest {
         game.addToDungeon(room1);
         game.addToDungeon(room2);
         assertEquals(room1,game.getRoom());
+    }
+
+    @Test
+    public void playerCanAttackEnemy(){
+        player1.giveDamage(enemy1,weapon);
+        assertEquals(70,enemy1.getHp());
+    }
+
+    @Test
+    public void playerCanTakeTreauseFromRoom(){
+        player1.takeTreasue(room1);
+        assertEquals(4, player1.getPot());
     }
 }

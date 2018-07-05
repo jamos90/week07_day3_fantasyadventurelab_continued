@@ -17,7 +17,7 @@ import static org.junit.Assert.assertEquals;
         public void setUp(){
             weapon1 = new Weapon("Smasher","Sword",20);
             weapon2 = new Weapon("Stabber","Sword",40);
-            knight = new Knight("Sir Galahad", 70, weapon1);
+            knight = new Knight("Sir Galahad", 70,weapon1,0);
         }
 
         @Test

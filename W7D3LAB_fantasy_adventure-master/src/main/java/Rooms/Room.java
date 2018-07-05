@@ -32,4 +32,8 @@ public class Room {
     public String getEnemyType() {
         return this.enemy.hasName();
     }
+
+    public int getTreasureValue(){
+        return this.treasure.getValue();
+    }
 }

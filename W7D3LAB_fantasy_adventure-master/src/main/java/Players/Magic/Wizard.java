@@ -8,8 +8,8 @@ public class Wizard extends Player implements IMagic {
 
     protected Spell spell;
 
-    public Wizard(String name, int hp, Spell spell){
-        super(name, hp);
+    public Wizard(String name, int hp, int pot, Spell spell){
+        super(name, hp, pot);
         this.spell = spell;
     }
 

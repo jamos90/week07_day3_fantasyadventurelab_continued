@@ -9,8 +9,8 @@ public class Warlock extends Player implements IMagic {
 
     protected Spell spell;
 
-    public Warlock(String name, int hp, Spell spell){
-        super(name, hp);
+    public Warlock(String name, int hp, int pot, Spell spell){
+        super(name, hp, pot);
         this.spell = spell;
     }
 

@@ -1,16 +1,23 @@
 import Players.Player;
 import Rooms.Room;
+import javafx.print.PageLayout;
 
 import java.util.ArrayList;
 
 public class Game {
 
+    protected Player player;
+    protected Room room;
     protected ArrayList<Player> party;
     protected ArrayList<Room> dungeons;
 
+
     public Game(){
-        party = new ArrayList<>();
-        dungeons = new ArrayList<>();
+        this.player = player;
+        this.room = room;
+        this.party = new ArrayList<>();
+        this.dungeons = new ArrayList<>();
+
     }
 
 

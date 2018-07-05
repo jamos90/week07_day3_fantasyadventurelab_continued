@@ -7,8 +7,8 @@ public class Knight extends Players.Player implements IWeapon {
 
     protected Weapon weapon;
 
-    public Knight(String name, int hp, Weapon weapon){
-        super(name, hp);
+    public Knight(String name, int hp, Weapon weapon, int pot){
+        super(name, hp, pot);
         this.weapon = weapon;
     }
 

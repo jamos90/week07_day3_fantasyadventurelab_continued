@@ -7,8 +7,8 @@ public class Barbarian extends Players.Player implements IWeapon {
 
     private Weapon weapon;
 
-    public Barbarian(String name, int hp, Weapon weapon){
-        super(name,hp);
+    public Barbarian(String name, int hp, Weapon weapon, int pot){
+        super(name,hp,pot);
         this.weapon = weapon;
     }
 

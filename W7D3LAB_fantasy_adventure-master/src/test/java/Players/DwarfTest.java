@@ -16,7 +16,7 @@ public class DwarfTest {
     public void setUp(){
         weapon1 = new Weapon("Smasher","Sword",20);
         weapon2 = new Weapon("Stabber","Sword",40);
-        dwarf = new Dwarf("Gimli", 80, weapon1);
+        dwarf = new Dwarf("Gimli", 80, 0,weapon1);
     }
 
     @Test

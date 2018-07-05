@@ -8,8 +8,8 @@ public class Cleric extends Player implements IHeal {
 
     protected Restoration restoration;
 
-    public Cleric(String name, int hp, Restoration restoration){
-        super(name, hp);
+    public Cleric(String name, int hp, int pot, Restoration restoration){
+        super(name, hp, pot);
         this.restoration = restoration;
 
     }

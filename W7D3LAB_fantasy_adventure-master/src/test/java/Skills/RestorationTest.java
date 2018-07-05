@@ -19,7 +19,7 @@ public class RestorationTest {
     @Before
     public void setUp(){
         weapon = new Weapon("Smasher","Hammer",34);
-        knight = new Knight("Sir Amos",40, weapon);
+        knight = new Knight("Sir Amos",40, weapon,0);
         restoration = new Restoration("Restore","Potion", -25);
 
     }

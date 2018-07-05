@@ -20,7 +20,7 @@ public class WizardTest {
         spell1 = new Spell("Fireball", "Burn", 40);
         spell2 = new Spell("Lightning Strike", "Electricution", 50);
         spell3 = new Spell("Whirlwind", "Drown", 60);
-        wizard = new Wizard("Dumbledore", 100, spell1);
+        wizard = new Wizard("Dumbledore", 100,0, spell1);
     }
 
     @Test

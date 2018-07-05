@@ -7,8 +7,8 @@ public class Dwarf extends Players.Player implements IWeapon {
 
     protected Weapon weapon;
 
-    public Dwarf(String name, int hp, Weapon weapon){
-        super(name, hp);
+    public Dwarf(String name, int hp, int pot, Weapon weapon){
+        super(name, hp, pot);
         this.weapon = weapon;
     }
 

@@ -19,7 +19,7 @@ public class WarlockTest {
         spell1 = new Spell("Fireball", "Burn", 40);
         spell2 = new Spell("Lightning Strike", "Electricution", 50);
         spell3 = new Spell("Whirlwind", "Drown", 60);
-        warlock = new Warlock("Walter", 95, spell1);
+        warlock = new Warlock("Walter", 95, 0, spell1);
     }
 
     @Test
